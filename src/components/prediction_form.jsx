@@ -103,7 +103,7 @@ const PredictionForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('artificail-lifter-flask-api.vercel.app', {
+      const response = await fetch('artificail-lifter-flask-api.vercel.app/predict', {
         method: 'POST',
         credentials: 'include',
         headers: {
